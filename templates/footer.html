@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block footer %}
+    <footer>
+        <div class="container">
+            <a href="#" id="logo">
+                <img src="{% static 'images/logo.png' %}" alt="logo">
+            </a>
+            <h5> معلومات التواصل</h5>
+
+            <a href="#">
+                <img src="{% static 'images/instagram_48px.png' %}" alt="instagram">
+            </a>
+            <a href="#">
+                <img src="{% static 'images/twitter_48px.png' %}" alt="twitter">
+            </a>
+            <a href="#">
+                <img src="{% static 'images/phone_32px.png' %}" alt="phone">
+            </a>
+            <p>جميع الحقوق محفوظة و الحافظ الله &copy;</p>
+
+        </div>
+    </footer>
+{% endblock %}

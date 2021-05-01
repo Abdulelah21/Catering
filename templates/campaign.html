@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Campaign{% endblock %}
+{% block header %}
+    {% include 'header.html' %}
+{% endblock %}
+
+{% block content %}
+    <div class="Campaign">
+    <div class="Campaign-img">
+        <img src="{% static 'images/paction01.jpg' %}">
+
+        <div class="Campaign-desc">
+            <h2>اسم: الحملة </h2>
+            <h2>مكان: الحملة </h2>
+            <h5>بعض التفاصيل المتعلقة بالحملة </h5>
+
+        </div>
+
+        <div class="campeind-form">
+            <form onsubmit="return validateLogin();" action="" method="POST">
+                    <span class="error" id="errLoginName">
+                    </span>
+
+                <br/>
+                <br/>
+                <input type="text" placeholder="....عدد اكياس الارز" name="UserName" id="login_name">
+                <br/>
+                <br/>
+                <span class="error" id="errLoginPassword">
+                    </span>
+
+                <select name="Country" id="Rrice">
+                    <option>kg وزن الكيس</option>
+                    <option value="idea">3kg</option>
+                    <option value="problem">5kg</option>
+                    <option value="help">10kg</option>
+                    <option value="other">20kg</option>
+                    <option value="other">40kg</option>
+                </select>
+
+                <br><br>
+
+                <select name="association_name" id="Rrice">
+                    <option>اختر الجمعية</option>
+                    <option value="idea">جمعية الإنماء</option>
+                    <option value="problem">جمعية البر</option>
+                    <option value="help">جمعية زمزم</option>
+                </select>
+                <br/>
+                <br/>
+                <button type="submit" id="Rrice" onclick="vali">تبرع</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+    {% include 'footer.html' %}
+{% endblock %}

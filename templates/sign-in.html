@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}sign in{% endblock %}
+
+{% block header %}
+    {% include 'header.html' %}
+{% endblock %}
+
+{% block content %}
+    <div class="register">
+    <div class="container">
+        <h1>انشاء حساب جديد</h1>
+        <br>
+        <div id="registerBox">
+            <form onsubmit="return validReg();" id="login" action="login" method="POST">
+
+                    <span class="error" id="ErrUname">
+                    </span>
+                <br/>
+                <input type="text" placeholder="....اسمك" name="UserName" id="Uname">
+                <br/><!--end of textfild-->
+
+                <span class="error" id="Errfname">
+                    </span>
+                <br/>
+                <input type="text" placeholder="....اسم العائلة" name="fname" id="fname">
+                <br/><!--end of textfild-->
+
+                <span class="error" id="errPhoneNum">
+                    </span>
+                <br/>
+                <input type="text" placeholder="....ادخل رقم جوالك" name="phoneNum" id="phoneNum">
+                <br/><!--end of textfild-->
+
+                <span class="error" id="errAddress">
+                    </span>
+                <br/>
+                <input type="text" placeholder=".... الحي الذي تسكن فيه " name="Address" id="Address">
+                <br/><!--end of textfild-->
+
+                <span class="error" id="errEmail">
+                    </span>
+                <br/>
+                <input type="text" placeholder="....بريدك الاكتروني " name="email" id="email">
+                <br/><!--end of textfild-->
+
+                <span class="error" id="errPassword">
+                    </span>
+                <br/>
+                <input type="password" placeholder=".....كلمة المرور " name="Password" id="register_password">
+                <br/><!--end of textfild-->
+
+                <span class="error" id="errPassword2">
+                    </span>
+                <br/>
+                <input type="password" placeholder=".....تأكيد كلمة المرور " name="RePassword" id="register_password2">
+                <br/><!--end of textfild-->
+                <br>
+                <br>
+
+                <button type="submit" id="sign_button">التسجيل</button>
+            </form>
+            <a href="{% url 'login' %}">لديك حساب؟ قم بتسجيل الدخول</a>
+        </div>
+        <!--end of form-->
+
+
+    </div>
+</div>
+<!--end of sign-in-->
+{% endblock %}
+
+{% block footer %}
+    {% include 'footer.html' %}
+{% endblock %}

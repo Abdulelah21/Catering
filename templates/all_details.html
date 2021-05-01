@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}all details{% endblock %}
+
+{% block header %}
+    {% include 'header.html' %}
+{% endblock %}
+
+{% block content %}
+    <div class="table">
+    <table id="customers">
+        <tr>
+            <th>collm 5</th>
+            <th>collm 4</th>
+            <th>collm 3</th>
+            <th>collm 2</th>
+            <th>collm 1</th>
+        </tr>
+
+        <tr>
+            <td>row 5</td>
+            <td>row 4</td>
+            <td>row 3</td>
+            <td>row 2</td>
+            <td>row 1</td>
+        </tr>
+        <tr>
+            <td>row 5</td>
+            <td>row 4</td>
+            <td>row 3</td>
+            <td>row 2</td>
+            <td>row 1</td>
+        </tr>
+        <tr>
+            <td>row 5</td>
+            <td>row 4</td>
+            <td>row 3</td>
+            <td>row 2</td>
+            <td>row 1</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
+
+{% block footer %}
+    {% include 'footer.html' %}
+{% endblock %}

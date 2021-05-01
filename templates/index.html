@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home Page{% endblock %}
+{% block header %}
+    {% include 'header.html' %}
+{% endblock %}
+
+{% block content %}
+    <div id="disc">
+        <div class="container">
+            <h1 id="titleHome">وأقيموا الصلاة وآتوا الزكاة واركعوا مع الراكعين</h1>
+        </div>
+    </div><!--end of description-->
+
+    <div id="Services">
+        <div class="container">
+            <h1>"قال النبي صلى الله عليه وسلم "طـُهرة للصائم من اللغو والرفث"</h1>
+            <br>
+
+            <h5>...... فكن احد المتبرعين</h5>
+            <br>
+
+            <h1>من ابرز الطلبات </h1>
+            <div id="insideCont">
+                <div class="service">
+                    <img src="{% static 'images/paction01.jpg' %}" alt="image 01">
+                    <br/>
+                    <br/>
+
+                    <h2>اسم: الحملة </h2>
+                    <h2>مكان: الحملة </h2>
+                    <br/>
+                    <a href="{% url 'campaign' %}">
+                        <button type="button" id="sendRequest">تبرع الان</button>
+                    </a>
+                </div>
+                <div class="service">
+                    <img src="{% static 'images/paction02.png' %}" alt="image 02">
+                    <br/>
+                    <br/>
+                    <h2>اسم: الحملة </h2>
+                    <h2>مكان: الحملة </h2>
+                    <br/>
+                    <a href="{% url 'campaign' %}">
+                        <button type="button" id="sendRequest">تبرع الان</button>
+                    </a>
+                </div>
+                <div class="service">
+                    <img src="{% static 'images/Puc03.jpg' %}" alt="image 03">
+                    <br/>
+                    <br/>
+                    <h2>اسم: الحملة </h2>
+                    <h2>مكان: الحملة </h2>
+                    <br/>
+                    <a href="{% url 'campaign' %}">
+                        <button type="button" id="sendRequest">تبرع الان</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {% include 'footer.html' %}
+{% endblock %}

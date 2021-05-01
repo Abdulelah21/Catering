@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}new campaign{% endblock %}
+
+{% block header %}
+    {% include 'header.html' %}
+{% endblock %}
+
+{% block content %}
+    <div class="login">
+        <div class="container">
+            <h1> اضافة حملة جديدة </h1>
+            <br>
+            <div class="comp">
+                <form onsubmit="return validateLogin();" id="" action="" method="POST">
+                        <span class="error" id="ErrconName">
+                        </span>
+                    <br/>
+                    <br/>
+                    <input type="text" placeholder="....  ادخل اسم الحملة" name="comName" id="comName">
+                    <br/>
+                    <br/>
+                    <span class="error" id="ErrconDescription">
+                                </span>
+                    <br/>
+                    <br/>
+                    <textarea placeholder="ادخل وصف مناسب للحملة " name="Description" id="Description" cols="30"
+                              rows="10"></textarea>
+                    <br/>
+                    <br/>
+                    <span class="error" id="ErrQyt">
+                                </span>
+                    <input type="text" placeholder="....  ادخل الكمية المطلوبة  " name="Qty" id="qyt">
+                    <br/>
+                    <br/>
+                    <button type="submit" id="login_button"> اضافة حملة جديدة</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {% include 'footer.html' %}
+{% endblock %}

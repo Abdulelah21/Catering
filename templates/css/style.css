@@ -1,0 +1,469 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/*
+                                    header style: 
+                                    1- logo
+     2- navbar ( homepage-link,bookspage-link,feedackpage-link,aboutuspage-link)
+------------------------------------------------------------------------------------------
+*/
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #393939;
+    color: white;
+    border-bottom: 10px solid #6B6B6B;
+
+}
+
+header #navbar a {
+    text-decoration: none;
+    padding: 5px;
+    font-size: 20px;
+    float: left;
+    color: aliceblue;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+header li {
+    display: inline;
+
+}
+
+#navbar {
+    float: left;
+}
+
+.rtl{
+    direction: rtl;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+#logo img {
+    height: 100px;
+    display: block;
+    float: right;
+    margin: 0;
+
+}
+
+header #navbar .current a {
+    color: #6B6B6B;
+
+}
+
+/*
+                        style section "welcome and dicreption" in index 
+--------------------------------------------------------------------------------------------
+*/
+#disc {
+    align-content: center;
+    background-image: url(../images/9.jpg);
+    background-size: cover;
+    opacity: 80%;
+    height: 400px;
+}
+
+#disc .container {
+    text-align: center;
+    padding: 20px;
+    color: #f0f0f0;
+}
+
+#disc .container #titleHome {
+    font-size: 50px;
+    color: #f0f0f0;
+}
+
+/*
+                                the Services section in index
+--------------------------------------------------------------------------------------------
+*/
+.service {
+    float: left;
+    width: 24.5%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 21px;
+    padding: 10px 0px;
+
+    margin: 15px 0px;
+    margin-right: 50px;
+    background-color: #6B6B6B;
+
+}
+
+.service img {
+    height: 90px;
+    display: inline;
+}
+
+#Services .container #insideCont {
+    margin-left: 17%;
+    height: 650px;
+}
+
+#Services {
+    text-align: center;
+
+}
+
+#Services .service {
+
+    background-color: #a2a2a3;
+}
+
+#Services .container {
+    text-align: center;
+
+}
+
+#Services h1 {
+    font-size: 40px;
+}
+
+#Services h2 {
+    font-size: 25px;
+    margin-bottom: 0px;
+    color: #131313;
+
+}
+
+#Services #sendRequest {
+    font-size: 20px;
+    height: 35px;
+    padding: 0 10px;
+    border: 1px solid;
+    border-radius: 21px;
+    background-color: white;
+}
+
+#Services #sendRequest:hover {
+    font-size: 25px;
+    background-color: black;
+    color: white
+
+}
+
+/*------------------------------------------------------------------------------
+                                Login Page 
+------------------------------------------------------------------------------*/
+
+.login .container {
+    height: 800px;
+    font-size: 20px;
+
+}
+
+input[type="text"] , textarea::placeholder {
+    text-align: right;
+}
+  .aa{
+      
+  }
+
+input[type="password"] {
+    text-align: right;
+}
+
+.login .container #loginBox{
+    height: 350px;
+    width: 40%;
+    background-color: dimgray;
+    border-radius: 20px;
+    margin-left: 35%;
+    color: aliceblue;
+    text-align: center;
+
+
+}
+
+.login .container #loginBox #insideLoginBox {
+
+    padding-top: 20%;
+}
+
+.login .container #login_button {
+    font-size: 20px;
+    height: 35px;
+    padding: 0 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    margin: auto;
+    display: block;
+}
+
+.login input {
+
+    margin-bottom: 6px;
+    margin-top: 6px;
+    padding-top: 10px;
+    /*padding-bottom: 20px;*/
+    font-size: 17px;
+    width: 60%;
+    margin: auto;
+
+
+}
+
+.login .container h1 {
+    text-align: center;
+    margin-top: 5%;
+}
+
+#loginBox a {
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+#loginBox a:hover {
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: aqua
+}
+
+/*------------------------------------------------------------------------------
+                                Campaign Page 
+------------------------------------------------------------------------------*/
+.Campaign {
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 21px;
+    padding: 5% 0px;
+    margin: 10% 0px;
+    margin-right: 50%;
+    margin-left: 20%;
+    background-color: #6B6B6B;
+}
+
+.Campaign .Campaign-img {
+    margin-left: 10%;
+}
+
+.Campaign .Campaign-desc {
+    float: right;
+    margin-right: 8%;
+}
+
+.Campaign .campeind-form {
+    float: right;
+    margin-right: 8%;
+    border-radius: 21px;
+
+}
+
+.Campaign .campeind-form input {
+    border-radius: 21px;
+}
+
+#Rrice {
+    font-weight: 100;
+    width: 190px;
+    height: 40px;
+    text-align: center;
+    border-radius: 21px;
+}
+
+/*------------------------------------------------------------------------------
+                                BrowAllReqest Page 
+------------------------------------------------------------------------------*/
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #3282B8;
+    color: white;
+    font-size: 20px;
+}
+
+.table {
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 25%;
+    height: 50%;
+}
+
+
+/*------------------------------------------------------------------------------
+                                Register Page
+                                #3282B8 
+                                #29C7AC
+------------------------------------------------------------------------------*/
+
+.register .container {
+    height: 850px;
+    font-size: 20px;
+
+}
+
+.register .container #registerBox {
+    height: 950px;
+    width: 350px;
+    background-color: dimgray;
+    margin-top: 5%;
+    margin-left: 38%;
+    color: aliceblue;
+    border-radius: 20px;
+
+    text-align: center;
+
+
+}
+
+.register .container #sign_button {
+    font-size: 20px;
+    height: 35px;
+    padding: 0 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    margin: auto;
+    display: block;
+}
+
+.register .container #registerBox #insideRegisterBox {
+
+
+}
+
+/*------------------------------------------------------------------------------
+                                BrowAllReqest Page 
+------------------------------------------------------------------------------*/
+.customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+  }
+
+  .customers td, .customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  .customers tr:hover {background-color: #ddd;}
+
+  .customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #3282B8;
+    color: white;
+    font-size: 20px;
+  }
+  .table{
+      text-align: center;
+      margin-top: 2%;
+      margin-left: 25%;
+      height: 50%;
+  }
+
+.register .container #register_button{
+    font-size: 20px;
+    height: 35px;
+    padding: 0 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    margin: auto;
+    display: block;
+}
+
+.register input {
+
+    margin-bottom: 6px;
+    margin-top: 6px;
+    padding-top: 10px;
+    /*padding-bottom: 20px;*/
+    font-size: 17px;
+    width: 60%;
+    margin: auto;
+
+
+}
+
+.register .container h1 {
+    text-align: center;
+    margin-top: 5%;
+}
+
+#registerBox a {
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+#registerBox a:hover {
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: aqua;
+}
+
+
+/*
+                                    footer style 
+--------------------------------------------------------------------------------------------
+*/
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    height: 10%;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #6B6B6B;
+    text-align: center;
+}
+
+footer p {
+    margin: 0px;
+}
+/*
+comp box page
+*/
+.comp{
+    display: block;
+    margin: 0 auto ;
+    width: 40%;
+    background-color: dimgray;
+    border-radius: 20px;
+    margin-left: 35%;
+    color: aliceblue;
+    text-align: center;
+}

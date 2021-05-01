@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}login{% endblock %}
+{% block header %}
+    {% include 'header.html' %}
+{% endblock %}
+{% block content %}
+    <div class="login">
+        <div class="container">
+            <h1>تسجيل الدخول</h1>
+            <br>
+            <div id="loginBox">
+                <form onsubmit="return validateLogin();" id="login" action="login" method="POST">
+                        <span class="error" id="errLoginName">
+                        </span>
+                    </label>
+                    <br/>
+                    <br/>
+                    <input type="text" placeholder="....ادخل رقم جوالك" name="UserName" id="loginname">
+                    <br/>
+                    <br/>
+                    <span class="error" id="errLoginPassword">
+                        </span>
+                    </label>
+                    <br/>
+                    <br/>
+                    <input type="password" placeholder="....ادخل كلمة المرور" name="Password" id="loginpassword">
+                    <br/>
+                    <br/>
+                    <button type="submit" id="login_button">تسجيل الدخول</button>
+                </form>
+                <a href="{% url 'sign_in' %}">لا يوجد لديك حساب؟ قم بانشاء حساب الان</a>
+            </div><!--end of form-->
+        </div>
+    </div> <!--end of lgoin-->
+{% endblock %}
+
+{% block footer %}
+    {% include 'footer.html' %}
+{% endblock %}

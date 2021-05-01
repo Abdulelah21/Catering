@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}all requests{% endblock %}
+
+{% block header %}
+    {% include 'header.html' %}
+{% endblock %}
+
+{% block content %}
+    <div class="table">
+    <table id="customers">
+        <tr>
+            <th>حالة التبرع</th>
+            <th>وزن الكيس الواحد</th>
+            <th>عدد أكياس التبرع</th>
+            <th>اسم الحملة</th>
+            <th>اسم المتبرع</th>
+        </tr>
+
+        <tr>
+            <td>قيد التنفيذ</td>
+            <td>5kg</td>
+            <td>10</td>
+            <td>زكاة الفطر</td>
+            <td>محمد</td>
+        </tr>
+        <tr>
+            <td>مكتملة</td>
+            <td>10kg</td>
+            <td>6</td>
+            <td>زكاة الفطر</td>
+            <td>علي</td>
+        </tr>
+        <tr>
+            <td>مكتملة</td>
+            <td>10kg</td>
+            <td>4</td>
+            <td>زكاة الفطر</td>
+            <td>يوسف</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
+
+{% block footer %}
+    {% include 'footer.html' %}
+{% endblock %}

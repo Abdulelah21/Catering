@@ -1,0 +1,5 @@
+/venv/
+/.idea/
+/App/*pycache*
+/Charity/*pycache*
+App/migrations/*pycache*
